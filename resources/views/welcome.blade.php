@@ -27,6 +27,6 @@
             <cmain></cmain>
             <cfooter></cfooter>
         </div>
-        <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ (env('APP_ENV') === 'production') ? asset('js/app.js') : mix('js/app.js') }}"></script>
     </body>
 </html>
