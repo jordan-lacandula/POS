@@ -10,13 +10,13 @@
             <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
             <a class="nav-link" href="#">Features</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
+            </li> -->
+            <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown link
             </a>
@@ -25,7 +25,7 @@
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-            </li>
+            </li> -->
         </ul>
         </div>
     </div>
