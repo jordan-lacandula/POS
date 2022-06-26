@@ -10,6 +10,9 @@
             <li class="nav-item">
             <router-link class="nav-link active" to="/dashboard">Dashboard</router-link>
             </li>
+            <li class="nav-item">
+            <router-link class="nav-link active" to="/policy">Policy</router-link>
+            </li>
             <!-- <li class="nav-item">
             <a class="nav-link" href="#">Features</a>
             </li>

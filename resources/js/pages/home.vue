@@ -1,12 +1,16 @@
 <template>
     <div>
-        <h2>This is a homepage</h2>
+        <page-header title="Home"></page-header>
     </div>
 </template>
 
 <script>
+    import pageHeader from '../components/pageHeader'
     export default {
         name: "home",
+        components: {
+            pageHeader
+        }
     }
 </script>
 
