@@ -1,4 +1,5 @@
 import router from "./routes.js";
+import store_main from "./stores/store.js"
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -31,6 +32,7 @@ import { createApp } from "vue";
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-const app = createApp(base)
+createApp(base)
 .use(router)
+.use(store_main)
 .mount('#app');
