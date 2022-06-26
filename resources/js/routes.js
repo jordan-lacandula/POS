@@ -1,18 +1,19 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 import home from './pages/home'
+import dashboard from './pages/dashboard'
 
-const routes = [
-    {
-        path: '/',
-        name: 'home',
-        component: home
-    }
-]
 
 const router = createRouter({
     history: createWebHashHistory(),
-    routes
-})
+    routes : [{
+            path: '/',
+            component: home
+        }, {
+            path: '/dashboard',
+            component: dashboard
+        }
+    ]
+});
 
-//export default router;
+export default router;

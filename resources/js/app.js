@@ -21,17 +21,16 @@ window.Vue = require('vue').default;
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 // SECTIONS
-Vue.component('cheader', require('./sections/cheader.vue').default);
-Vue.component('cfooter', require('./sections/cfooter.vue').default);
-Vue.component('cmain', require('./sections/cmain.vue').default);
-
+//Vue.component('cheader', require('./sections/cheader').default);
+// Vue.component('cfooter', require('./sections/cfooter').default);
+// Vue.component('cmain', require('./sections/cmain').default);
+import base from "./sections/base";
+import { createApp } from "vue";
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-//Vue.use(router);
-const app = new Vue({
-    el: '#app',
-//    router,
-});
+const app = createApp(base)
+.use(router)
+.mount('#app');
