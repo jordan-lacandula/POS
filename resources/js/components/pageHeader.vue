@@ -15,6 +15,11 @@
 
 <style scoped>
 div {
-    background-color: #f5f5f5;
+    background-color: #e9e9e9;
+    padding: 15px 30px;
+    margin-bottom: 30px;
+}
+.page-title {
+    margin: 0px;
 }
 </style>

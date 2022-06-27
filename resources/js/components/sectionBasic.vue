@@ -23,4 +23,7 @@
 </script>
 
 <style scoped>
+    section {
+        padding: 0px 30px
+    }
 </style>

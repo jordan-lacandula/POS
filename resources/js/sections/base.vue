@@ -2,7 +2,7 @@
     <div class="basePage">
         <cheader/>
         <cmain></cmain>
-        <footer></footer>
+        <cfooter></cfooter>
     </div>
 </template>
 <script>
@@ -17,3 +17,6 @@
         }
     }
 </script>
+
+<style scoped>
+</style>
