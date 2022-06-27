@@ -1,3 +1,5 @@
+import router from "./routes.js";
+import store_main from "./stores/store.js"
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -19,16 +21,18 @@ window.Vue = require('vue').default;
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('cheader', require('./sections/cheader.vue').default);
-Vue.component('cfooter', require('./sections/cfooter.vue').default);
-Vue.component('cmain', require('./sections/cmain.vue').default);
-
+// SECTIONS
+//Vue.component('cheader', require('./sections/cheader').default);
+// Vue.component('cfooter', require('./sections/cfooter').default);
+// Vue.component('cmain', require('./sections/cmain').default);
+import base from "./sections/base";
+import { createApp } from "vue";
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
-const app = new Vue({
-    el: '#app',
-});
+createApp(base)
+.use(router)
+.use(store_main)
+.mount('#app');

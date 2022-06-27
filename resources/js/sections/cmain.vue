@@ -1,3 +1,8 @@
 <template>
-    <main>main</main>
+    <main>
+        <router-view></router-view>
+    </main>
 </template>
+
+<style scoped>
+</style>
