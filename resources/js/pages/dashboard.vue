@@ -1,15 +1,17 @@
 <template>
     <div>
-        <page-header title="Dashboard"></page-header>
+        <!-- <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;"> -->
+        <sidebar></sidebar>
     </div>
 </template>
 
 <script>
-    import pageHeader from '../components/pageHeader'
+    
+    import sidebar from '../components/sidebar'
     export default {
         name: "dashboard",
         components: {
-            pageHeader
+            sidebar
         }
     }
 </script>
