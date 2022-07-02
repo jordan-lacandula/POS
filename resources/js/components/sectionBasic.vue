@@ -24,6 +24,7 @@
 
 <style scoped>
     section {
-        padding: 0px 30px
+        padding: 0px 30px;
+        margin-top: 15px;
     }
 </style>

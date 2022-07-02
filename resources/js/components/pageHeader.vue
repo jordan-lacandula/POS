@@ -18,7 +18,6 @@ div {
     background-color: white;
     color: #49717a;
     padding: 15px 30px;
-    margin-bottom: 30px;
 }
 .page-title {
     margin: 0px;
