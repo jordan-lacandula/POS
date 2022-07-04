@@ -11,6 +11,9 @@
                     <router-link class="nav-link" to="/dashboard">Dashboard</router-link>
                 </li>
                 <li class="nav-item">
+                    <router-link class="nav-link" to="/finance">Finance</router-link>
+                </li>
+                <li class="nav-item">
                     <router-link class="nav-link" to="/refunds">Refunds</router-link>
                 </li>
                 <li class="nav-item">
