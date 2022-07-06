@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+import { Component } from "react";
+
+import HeaderComponent from "./sections/header";
+import FooterComponent from "./sections/footer";
+import ShopComponent from './components/shop'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  constructor () {
+    super();
+    this.state = {
+      shop: {
+        id: 1,
+        name: "Nekobiz"
+      }
+    }
+  }
+
+  getShopName() {
+    return this.state.shop.name;
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <HeaderComponent shop={this.getShopName()}></HeaderComponent>
+        <main>
+          <ShopComponent shop={this.getShopName()}></ShopComponent>
+        </main>
+        <FooterComponent shop={this.getShopName()}></FooterComponent>
+      </div>
+    );
+  }
 }
 
 export default App;
