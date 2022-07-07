@@ -1,5 +1,7 @@
 import { Component } from "react";
 
+import store from './stores/store'
+
 import HeaderComponent from "./sections/header";
 import FooterComponent from "./sections/footer";
 import ShopComponent from './components/shop'
