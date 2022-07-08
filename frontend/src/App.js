@@ -1,18 +1,14 @@
 import { Component } from "react";
-
-import store from './stores/store'
-
 import HeaderComponent from "./sections/header";
 import FooterComponent from "./sections/footer";
-import ShopComponent from './components/shop'
+import ShopComponent from './components/shop.jsx'
 import './App.css';
 
 class App extends Component{
   constructor () {
     super();
     this.state = {
-      shop: {
-        id: 1,
+      shop: { 
         name: "Nekobiz"
       }
     }
