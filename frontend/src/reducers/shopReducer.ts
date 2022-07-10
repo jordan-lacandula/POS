@@ -1,19 +1,18 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
-interface IShopState {
-    shopName: String;
-}
+import { IShopState } from "../Interfaces/shop";
 
 const initialState: IShopState = {
-    shopName: "My Shop"
+    name: "Sample"
 }
 
 const shopSlice = createSlice({
     name: 'shop',
     initialState,
     reducers: {
-        updateShopName(state, action) {
-            state.shopName = action.payload.shopName;
+        updateShopName(state, action: PayloadAction<IShopState>) {
+            state.name = (action.payload.name === "")
+            ? "undefined" 
+            : action.payload.name;
         }
     }
 })
