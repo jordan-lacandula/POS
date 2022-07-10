@@ -7,32 +7,14 @@ import './App.css';
 import { store } from "./stores/store.tsx";
 
 class App extends Component{
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      shop: {}
-    }
-
-    store.subscribe(() => {
-      this.setState({
-        shop: store.getState().shop
-      });
-    });
-  }
-
-  getShopName() {
-    return store.getState().shop.name
-  }
-
   render() {
     return (
       <div className="App">
-        <HeaderComponent shop={this.getShopName()}></HeaderComponent>
+        <HeaderComponent></HeaderComponent>
         <main>
-          <ShopComponent shop={this.getShopName()}></ShopComponent>
+          <ShopComponent></ShopComponent>
         </main>
-        <FooterComponent shop={this.getShopName()}></FooterComponent>
+        <FooterComponent></FooterComponent>
       </div>
     );
   }
