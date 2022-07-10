@@ -16,7 +16,6 @@ class ShopComponent extends Component {
         store.dispatch(updateShopName({name:document.getElementById("newshop").value}))
     }
     render() {
-        console.log("RENDER SHOP");
         return <>
             <div>Welcome to { this.state.name } shop</div>
             <input type="text" name="newShopName" id="newshop" />
