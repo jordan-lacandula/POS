@@ -4,18 +4,25 @@ import FooterComponent from "./sections/footer";
 import ShopComponent from './components/shop.jsx'
 import './App.css';
 
+import { store } from "./stores/store.tsx";
+
 class App extends Component{
-  constructor () {
-    super();
+  constructor(props) {
+    super(props);
+
     this.state = {
-      shop: { 
-        name: "Nekobiz"
-      }
+      shop: {}
     }
+
+    store.subscribe(() => {
+      this.setState({
+        shop: store.getState().shop
+      });
+    });
   }
 
   getShopName() {
-    return this.state.shop.name;
+    return store.getState().shop.name
   }
 
   render() {
